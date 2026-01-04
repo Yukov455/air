@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+env/
+venv/
+.eggs/
+*.egg-info/
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data (will be mounted as volumes)
+data/*.db
+models/*.pkl
+logs/*.log
+
+# Docker
+.docker
+
+# Misc
+.DS_Store
+*.md
+!README.md
