@@ -18,6 +18,9 @@ services:
       - ./data:/app/data                # Персистентное хранение БД
       - ./models:/app/models            # Персистентное хранение моделей
       - ./logs:/app/logs                # Логи
+      - ./webapp:/app/webapp            # Веб-интерфейс (для горячего обновления)
+      - ./services:/app/services        # Сервисы (для горячего обновления)
+      - ./app.py:/app/app.py            # Главный файл (для горячего обновления)
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]

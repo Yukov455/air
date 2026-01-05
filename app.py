@@ -3,8 +3,6 @@ Stock Analytics Monitoring System
 Автоматическое обновление данных и переобучение модели.
 """
 
-
-
 import os
 import sys
 from pathlib import Path
