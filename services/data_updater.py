@@ -3,6 +3,7 @@
 Поддерживает несколько источников с автоматическим переключением.
 """
 
+import os
 import requests
 import pandas as pd
 import numpy as np
@@ -47,9 +48,9 @@ class MultiSourceDataUpdater:
     Загрузчик данных с несколькими источниками и автоматическим fallback.
     """
     
-    # API ключи
-    ALPHAVANTAGE_KEY = "R89IMMWUAE7HUOCY"
-    FINNHUB_KEY = "demo"  # Можно заменить на реальный
+    # API ключи (из переменных окружения)
+    ALPHAVANTAGE_KEY = os.getenv('ALPHAVANTAGE_API_KEY', 'R89IMMWUAE7HUOCY')
+    FINNHUB_KEY = os.getenv('FINNHUB_API_KEY', 'demo')
     
     # Тикеры для отслеживания
     TICKERS = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'JPM', 'V', 'JNJ']

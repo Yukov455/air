@@ -8259,3 +8259,41 @@
 2026-01-05 02:48:45.607 | INFO     | services.data_updater:fetch_news:338 - Fetched 10 news for AAPL from alphavantage
 2026-01-05 02:48:45.788 | INFO     | services.scheduler:stop:109 - Scheduler stopped
 2026-01-05 02:48:45.789 | INFO     | __main__:shutdown_event:292 - Scheduler stopped
+2026-01-06 11:29:47.197 | INFO     | services.data_updater:__init__:79 - MultiSourceDataUpdater initialized
+2026-01-06 11:29:47.202 | INFO     | __main__:get_services:52 - DataUpdater initialized
+2026-01-06 11:29:47.217 | INFO     | services.model_trainer:_load_model:147 - Loaded model v1.0.2 with accuracy 58.97%
+2026-01-06 11:29:47.217 | INFO     | services.model_trainer:__init__:130 - UniversalModelTrainer initialized
+2026-01-06 11:29:47.217 | INFO     | __main__:get_services:60 - ModelTrainer initialized
+2026-01-06 11:29:47.217 | INFO     | services.scheduler:__init__:46 - TaskScheduler initialized
+2026-01-06 11:29:47.218 | INFO     | services.scheduler:add_task:73 - Task 'data_update' added with interval 300s
+2026-01-06 11:29:47.218 | INFO     | services.scheduler:add_task:73 - Task 'model_training' added with interval 3600s
+2026-01-06 11:29:47.218 | INFO     | __main__:get_services:81 - Scheduler initialized with tasks
+2026-01-06 11:29:47.218 | INFO     | services.scheduler:start:102 - Scheduler started
+2026-01-06 11:29:47.218 | INFO     | services.scheduler:_execute_task:145 - Running task 'data_update'...
+2026-01-06 11:29:47.218 | INFO     | __main__:startup_event:283 - Scheduler auto-started
+2026-01-06 11:29:47.218 | INFO     | services.data_updater:update_all:559 - Starting full data update...
+2026-01-06 11:29:47.660 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for AAPL from yahoo
+2026-01-06 11:29:48.317 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for MSFT from yahoo
+2026-01-06 11:29:48.943 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for GOOGL from yahoo
+2026-01-06 11:29:49.547 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for AMZN from yahoo
+2026-01-06 11:29:50.178 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for NVDA from yahoo
+2026-01-06 11:29:50.784 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for META from yahoo
+2026-01-06 11:29:51.390 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for TSLA from yahoo
+2026-01-06 11:29:52.038 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for JPM from yahoo
+2026-01-06 11:29:52.660 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for V from yahoo
+2026-01-06 11:29:53.351 | INFO     | services.data_updater:fetch_quotes:171 - Fetched 30 quotes for JNJ from yahoo
+2026-01-06 11:29:54.784 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for AAPL from finnhub
+2026-01-06 11:29:55.529 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for MSFT from finnhub
+2026-01-06 11:29:56.282 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for GOOGL from finnhub
+2026-01-06 11:29:56.900 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for AMZN from finnhub
+2026-01-06 11:29:57.529 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for NVDA from finnhub
+2026-01-06 11:29:58.105 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for META from finnhub
+2026-01-06 11:29:58.644 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for TSLA from finnhub
+2026-01-06 11:29:59.171 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for JPM from finnhub
+2026-01-06 11:29:59.631 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for V from finnhub
+2026-01-06 11:30:00.113 | INFO     | services.data_updater:fetch_news:339 - Fetched 10 news for JNJ from finnhub
+2026-01-06 11:30:00.876 | INFO     | services.data_updater:fetch_news:339 - Fetched 20 news for general from finnhub
+2026-01-06 11:30:00.884 | INFO     | services.data_updater:update_all:613 - Update complete: 300 quotes, 97 news, 0 errors in 13.7s
+2026-01-06 11:30:00.884 | INFO     | services.scheduler:_execute_task:158 - Task 'data_update' completed in 13.7s
+2026-01-06 11:30:13.302 | INFO     | services.scheduler:stop:109 - Scheduler stopped
+2026-01-06 11:30:13.302 | INFO     | __main__:shutdown_event:292 - Scheduler stopped

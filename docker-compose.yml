@@ -14,6 +14,7 @@ services:
       - MODEL_TRAIN_INTERVAL=3600       # Переобучение модели каждый час
       - AUTO_START_SCHEDULER=true       # Автозапуск планировщика
       - ALPHAVANTAGE_API_KEY=R89IMMWUAE7HUOCY
+      - FINNHUB_API_KEY=d5ecdupr01qjckl38rp0d5ecdupr01qjckl38rpg
     volumes:
       - ./data:/app/data                # Персистентное хранение БД
       - ./models:/app/models            # Персистентное хранение моделей
